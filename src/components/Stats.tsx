@@ -5,11 +5,11 @@ import { motion, useInView, animate } from "framer-motion";
 
 const stats = [
   {
-    number: "1,000+",
+    number: "500+",
     label: "Companies Formed",
   },
   {
-    number: "15+",
+    number: "7+",
     label: "Years of Experience",
   },
   {
@@ -61,7 +61,7 @@ export default function Stats() {
   return (
     <section className="pt-20 pb-10 md:py-24 bg-alabaster relative overflow-hidden border-t border-neutral-200/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
+
         {/* Horizontal Editorial Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-0 md:divide-x divide-neutral-200/50">
           {stats.map((stat, index) => (
