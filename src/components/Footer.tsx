@@ -9,10 +9,10 @@ export default function Footer() {
       <div className="absolute bottom-0 right-0 w-[20%] h-[30%] bg-[radial-gradient(circle_at_bottom_right,rgba(197,168,128,0.03),transparent_70%)] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
+
         {/* Footer Top Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 pb-12 border-b border-neutral-200/50">
-          
+
           {/* Column 1: Brand details (occupies 4 cols) */}
           <div className="lg:col-span-4 space-y-6">
             <Link href="/" className="flex items-center gap-2.5 group select-none">
@@ -28,7 +28,7 @@ export default function Footer() {
                 </span>
               </div>
             </Link>
-            
+
             <p className="font-sans text-xs sm:text-sm text-slate-grey leading-relaxed max-w-sm">
               Helping entrepreneurs and businesses establish a prestigious presence in the UAE. Complete company formation, residency, bank onboarding, and advisory.
             </p>
@@ -109,25 +109,25 @@ export default function Footer() {
             <ul className="space-y-4 font-sans text-xs sm:text-sm text-slate-grey">
               <li className="flex items-start gap-3">
                 <Phone className="w-4 h-4 text-champagne-gold flex-shrink-0 mt-0.5" />
-                <a href="tel:+971301234567" className="hover:text-champagne-gold transition-colors font-medium">
-                  +971 30 123 4567
+                <a href="tel:+97156440998" className="hover:text-champagne-gold transition-colors font-medium">
+                  +971 56 44 0998
                 </a>
               </li>
               <li className="flex items-start gap-3">
                 <Mail className="w-4 h-4 text-champagne-gold flex-shrink-0 mt-0.5" />
                 <a href="mailto:hello@openbusiness.ae" className="hover:text-champagne-gold transition-colors font-medium">
-                  hello@openbusiness.ae
+                  bwiseuae@gmail.com
                 </a>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-champagne-gold flex-shrink-0 mt-0.5" />
                 <span className="leading-relaxed">
-                  Office 1400, Al-Saraf Tower, Business Bay, Dubai, UAE
+                  Premises B.C. 1308392, Ajman Free Zone C1 Building, Ajman Free Zone, Ajman, UAE
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <Clock className="w-4 h-4 text-champagne-gold flex-shrink-0 mt-0.5" />
-                <span>Mon - Fri: 9:00 AM - 6:00 PM (GMT+4)</span>
+                <span>Mon - Fri: 9:00 AM - 6:00 PM, Saturday : 9:30 AM – 04:30 PM (GMT+4)</span>
               </li>
             </ul>
           </div>

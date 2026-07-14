@@ -58,7 +58,7 @@ export default function CTASection({
               </Link>
 
               <a
-                href="https://wa.me/971301234567"
+                href="https://wa.me/97156440998"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="border border-emerald-600/30 text-emerald-700 bg-emerald-50/10 hover:bg-emerald-600 hover:text-white font-sans font-bold text-xs tracking-widest uppercase px-8 py-4 rounded-sm transition-all duration-300 flex items-center justify-center gap-2 group"

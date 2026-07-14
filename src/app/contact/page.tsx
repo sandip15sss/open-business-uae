@@ -378,9 +378,9 @@ export default function ContactPage() {
                 {/* Telephone */}
                 <ContactCard
                   title="Direct Telephone Desk"
-                  value="+971 30 123 4567"
+                  value="+971 56 44 0998"
                   subtext="Available Mon-Fri, 9am - 6pm (GMT+4)"
-                  href="tel:+971301234567"
+                  href="tel:+971 56 44 0998"
                   icon={Phone}
                   delay={0.1}
                 />
@@ -388,7 +388,7 @@ export default function ContactPage() {
                 {/* Email */}
                 <ContactCard
                   title="Official Email"
-                  value="sandipsawant0107@gmail.com"
+                  value="bwiseuae@gmail.com"
                   subtext="Average client response speed: 2 hours"
                   href="mailto:sandipsawant0107@gmail.com"
                   icon={Mail}
@@ -398,8 +398,8 @@ export default function ContactPage() {
                 {/* Address */}
                 <ContactCard
                   title="Dubai HQ Address"
-                  value="Office 1400, Al-Saraf Tower"
-                  subtext="Business Bay, Dubai, United Arab Emirates"
+                  value=" Premises B.C. 1308392"
+                  subtext="Ajman Free Zone C1 Building, Ajman Free Zone, Ajman, UAE"
                   icon={MapPin}
                   delay={0.2}
                 />
@@ -408,7 +408,7 @@ export default function ContactPage() {
                 <ContactCard
                   title="Corporate Office Hours"
                   value="Mon - Fri: 9:00 AM - 6:00 PM"
-                  subtext="Closed on Saturday, Sunday & UAE public holidays"
+                  subtext="Saturday : 9:30 AM – 04:30 PM (UTC +04:00)"
                   icon={Clock}
                   delay={0.25}
                 />
@@ -416,9 +416,9 @@ export default function ContactPage() {
                 {/* WhatsApp */}
                 <ContactCard
                   title="Instant WhatsApp Hotline"
-                  value="+971 30 123 4567"
+                  value="+971 56 44 0998 "
                   subtext="Chat securely with client managers 24/7"
-                  href="https://wa.me/971301234567"
+                  href="https://wa.me/97156440998"
                   icon={WhatsAppIcon}
                   delay={0.3}
                   alignCenter={true}
@@ -455,7 +455,7 @@ export default function ContactPage() {
               </div>
               <div className="space-y-2">
                 <h3 className="font-serif text-2xl font-normal text-charcoal uppercase tracking-tight">
-                  Al-Saraf Tower, Business Bay
+                  Premises B.C. 1308392, Ajman Free Zone C1 Building
                 </h3>
                 <p className="font-sans text-sm text-slate-grey max-w-md">
                   Coordinates: 25.1856° N, 55.2726° E. Centrally located right next to Business Bay Metro Station, Business Bay Canal, Dubai.

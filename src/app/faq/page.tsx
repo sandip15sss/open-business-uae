@@ -38,7 +38,7 @@ const faqItems = [
   // Business Licensing
   {
     question: "How long does it take to obtain a trade license in Dubai?",
-    answer: "The duration depends on the jurisdiction. Certain Freezone licenses (such as IFZA or Meydan) can be issued in as little as 24 to 48 hours. Mainland commercial licenses typically take between 3 to 5 business days, pending external approvals from governmental departments.",
+    answer: "Mainland as well in some activities provide license in 2 working days.. Certain freezone license (Such as Ajman, Rakez, Shams, Ifza meydan) can be issued as 24 to 48 hours",
     category: "Business Licensing",
   },
   {
@@ -65,7 +65,7 @@ const faqItems = [
   },
   {
     question: "How long does it take to activate a corporate bank account?",
-    answer: "Onboarding timelines range from 2 to 4 weeks depending on the business activities, corporate structure (single shareholder vs. holding structure), and AML (Anti-Money Laundering) background screening policies of the chosen banking institution.",
+    answer: "Onboarding timelines range from 5 to 8 working days depending upon the business activities.. in some cases it takes 12 to 15 working days for high risk activities",
     category: "Banking",
   },
   // VAT & Tax
