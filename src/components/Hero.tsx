@@ -42,7 +42,7 @@ export default function Hero() {
   };
 
   return (
-    <section id="home" className="relative h-screen min-h-screen flex flex-col justify-between overflow-hidden bg-alabaster w-full">
+    <section id="home" className="relative w-full h-[80vh] min-h-[520px] max-h-[625px] overflow-hidden flex flex-col justify-between bg-[#fdfbf7]">
       {/* Full-width skyline background asset */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -51,17 +51,17 @@ export default function Hero() {
           fill
           priority
           sizes="100vw"
-          className="object-cover object-center opacity-85"
+          className="absolute inset-0 w-full h-full object-cover object-right md:object-center opacity-85"
         />
         {/* Soft, premium gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-alabaster via-alabaster/95 lg:via-alabaster/80 to-transparent pointer-events-none" />
       </div>
 
       {/* Upper content container wrapping H1, Paragraph, CTA Buttons */}
-      <div className="w-full max-w-7xl mx-auto px-6 md:px-16 pt-24 pb-28 relative z-10 flex-grow flex flex-col justify-center">
-        <div className="max-w-2xl lg:max-w-3xl text-left my-4">
+      <div className="w-full max-w-7xl mx-auto px-6 md:px-16 pt-20 md:pt-24 pb-4 relative z-10 flex-1 flex flex-col justify-center">
+        <div className="max-w-2xl lg:max-w-3xl text-left my-2">
           <motion.div
-            className="space-y-4"
+            className="space-y-3"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
@@ -89,7 +89,7 @@ export default function Hero() {
 
             {/* Concierge CTAs with premium golden accent button styles */}
             <motion.div
-              className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-1"
+              className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-0.5"
               variants={itemVariants}
             >
               <Link
@@ -111,11 +111,11 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Horizontal row of trust items positioned absolutely at bottom-6 fold */}
-      <div className="absolute bottom-6 left-0 w-full md:px-16 px-6 z-10">
+      {/* Horizontal row of trust items positioned relatively at the bottom flow */}
+      <div className="w-full border-t border-black/10 py-3 bg-[#fdfbf7] relative z-10 px-6 md:px-16 animate-fade-in">
         <div className="max-w-7xl mx-auto">
           <motion.div
-            className="grid grid-cols-3 gap-x-2 gap-y-1 md:flex md:flex-wrap md:items-center md:gap-x-8 md:gap-y-3 pt-3 md:pt-4 border-t border-neutral-200/50 w-full"
+            className="grid grid-cols-3 gap-x-2 gap-y-1 md:flex md:flex-wrap md:items-center md:gap-x-8 md:gap-y-3 w-full"
             variants={containerVariants}
             initial="hidden"
             animate="visible"

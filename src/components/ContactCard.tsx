@@ -9,8 +9,9 @@ interface ContactCardProps {
   value: string;
   subtext?: string;
   href?: string;
-  icon: LucideIcon;
+  icon: React.ComponentType<any>;
   delay?: number;
+  alignCenter?: boolean;
 }
 
 export default function ContactCard({
@@ -20,6 +21,7 @@ export default function ContactCard({
   href,
   icon: Icon,
   delay = 0,
+  alignCenter = false,
 }: ContactCardProps) {
   const CardContent = (
     <>
@@ -42,8 +44,9 @@ export default function ContactCard({
     </>
   );
 
-  const cardClasses =
-    "bg-transparent border border-neutral-200/40 rounded-none p-5 flex items-start gap-4 hover:border-champagne-gold/40 transition-all duration-500 group text-left w-full shadow-none";
+  const cardClasses = `bg-transparent border border-neutral-200/40 rounded-none p-5 flex ${
+    alignCenter ? "items-center" : "items-start"
+  } gap-4 hover:border-champagne-gold/40 transition-all duration-500 group text-left w-full shadow-none`;
 
   return (
     <motion.div

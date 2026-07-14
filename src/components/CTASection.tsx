@@ -22,10 +22,10 @@ export default function CTASection({
   return (
     <section className="py-16 md:py-24 bg-alabaster relative overflow-hidden border-t border-neutral-200/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
+
         {/* Main CTA Container Card */}
         <div className="bg-transparent border border-[#C5A880]/30 rounded-none overflow-hidden grid grid-cols-1 lg:grid-cols-12 items-stretch">
-          
+
           {/* Left Column: CTA Texts & Buttons */}
           <motion.div
             className="lg:col-span-7 p-6 sm:p-10 lg:p-16 flex flex-col justify-center space-y-6 md:space-y-8 text-left relative z-10 bg-alabaster"
@@ -56,7 +56,7 @@ export default function CTASection({
                 Book Consultation
                 <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
               </Link>
-              
+
               <a
                 href="https://wa.me/971301234567"
                 target="_blank"

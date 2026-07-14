@@ -59,7 +59,7 @@ function AnimatedCounter({ value }: { value: string }) {
 
 export default function Stats() {
   return (
-    <section className="py-10 md:py-24 bg-alabaster relative overflow-hidden border-t border-neutral-200/50">
+    <section className="pt-20 pb-10 md:py-24 bg-alabaster relative overflow-hidden border-t border-neutral-200/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Horizontal Editorial Grid */}

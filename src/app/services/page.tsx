@@ -43,7 +43,7 @@ const servicesList = [
     benefits: "Avoid delays and license rejections with expert pre-evaluation checksheets.",
     features: [
       "License type selection (Commercial, Service, Trade)",
-      "External approvals coordination (Municipality, Civil Defense)",
+      "External approvals coordination (Dubai custom, RTA, RERA approval etc.)",
       "Trade license amendments and renewals",
       "Special activity permissions & compliance audits",
     ],
@@ -81,7 +81,7 @@ const servicesList = [
       "FTA VAT registration & account setup",
       "Corporate Tax registration and filing preparations",
       "Tax accounting, ledger alignment & advice",
-      "Bookkeeping audits and compliance filings",
+      "Accounting and Bookkeeping",
     ],
   },
   {
@@ -111,12 +111,12 @@ const serviceStats = [
   },
   {
     icon: Clock,
-    number: "14 Days",
+    number: "7 Days",
     label: "Avg Bank Onboarding",
   },
   {
     icon: Award,
-    number: "45+",
+    number: "10+",
     label: "Partner Freezones",
   },
 ];

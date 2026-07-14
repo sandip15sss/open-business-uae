@@ -28,12 +28,12 @@ import CTASection from "@/components/CTASection";
 const stats = [
   {
     icon: Building2,
-    number: "1,000+",
+    number: "500+",
     label: "Companies Formed",
   },
   {
     icon: Calendar,
-    number: "15+",
+    number: "7+",
     label: "Years Experience",
   },
   {
@@ -58,14 +58,14 @@ const timelineMilestones = [
   {
     year: "2015",
     title: "Freezone Expansion",
-    description: "Partnered directly with major UAE Freezones including DMCC, IFZA, and Meydan, providing clients with flexible tax-free environments.",
-    details: ["Expanded office to Business Bay", "Recognized as a registered DMCC setup agent"],
+    description: "Partnered directly with major UAE Freezones including Ajman, RAKEZ, Shams freezone, DMCC, IFZA and Meydan providing clients with flexible tax-free environments.",
+    details: ["Expanded office to Business Bay", "Recognized as a registered Ajman channel Partner"],
   },
   {
     year: "2019",
     title: "Full-Service Integration",
     description: "Added dedicated corporate banking assistance, VAT compliance division, and visa processing departments to deliver a true turn-key setup experience.",
-    details: ["Established direct bank channel partnerships", "Passed 500+ successful visa approvals"],
+    details: ["Established direct bank channel partnerships", "Passed 200+ successful visa approvals"],
   },
   {
     year: "2024",
@@ -120,26 +120,26 @@ export default function AboutPage() {
               <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-normal text-charcoal leading-tight uppercase">
                 A Legacy of Business Setup <span className="font-serif italic font-light text-champagne-gold">Excellence.</span>
               </h2>
-              
+
               <div className="w-12 h-[1px] bg-champagne-gold/40 my-6" />
 
               <p className="font-sans text-sm sm:text-base text-slate-grey leading-relaxed">
                 For over 15 years, <strong>Open Business in UAE</strong> has stood as a trusted partner for global entrepreneurs, SMEs, and multi-national conglomerates. We simplify the complexities of entering the UAE market, handling local regulatory frameworks, and securing business entities in record time.
               </p>
-              
+
               <p className="font-sans text-sm sm:text-base text-slate-grey leading-relaxed">
                 Our founders started with a clear vision: to dismantle the bureaucratic barriers that often delay business launches. Today, we offer complete mainland, freezone, and offshore setups, visa processing, corporate banking support, and local corporate sponsorship arrangements.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
-                <div className="flex items-start gap-3">
+                {/* <div className="flex items-start gap-3">
                   <CheckCircle className="w-4 h-4 text-champagne-gold flex-shrink-0 mt-1" strokeWidth={1.5} />
                   <span className="font-sans text-xs sm:text-sm font-semibold text-charcoal">Licensed Legal Consultants</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-4 h-4 text-champagne-gold flex-shrink-0 mt-1" strokeWidth={1.5} />
                   <span className="font-sans text-xs sm:text-sm font-semibold text-charcoal">Government Liaison Officers (PRO)</span>
-                </div>
+                </div> */}
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-4 h-4 text-champagne-gold flex-shrink-0 mt-1" strokeWidth={1.5} />
                   <span className="font-sans text-xs sm:text-sm font-semibold text-charcoal">Official Freezone Strategic Partners</span>
@@ -172,7 +172,7 @@ export default function AboutPage() {
       <section className="py-24 bg-alabaster relative overflow-hidden border-t border-neutral-200/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            
+
             {/* Mission Card */}
             <motion.div
               className="border border-[#C5A880]/30 p-8 sm:p-12 flex flex-col justify-between items-start group relative overflow-hidden bg-alabaster"
