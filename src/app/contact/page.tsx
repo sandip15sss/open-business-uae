@@ -393,7 +393,7 @@ export default function ContactPage() {
                 <ContactCard
                   title="Direct Telephone Desk"
                   value="+971 56 44 0998"
-                  subtext="Available Mon-Fri, 9am - 6pm (GMT+4)"
+                  subtext="Available Mon-Fri, 9:00 AM - 6:00 PM, Saturday : 9:30 AM – 04:30 PM (GMT+4)"
                   href="tel:+971 56 44 0998"
                   icon={Phone}
                   delay={0.1}
