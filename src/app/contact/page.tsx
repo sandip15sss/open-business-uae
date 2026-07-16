@@ -196,6 +196,10 @@ export default function ContactPage() {
                           id="name"
                           type="text"
                           name="name"
+                          required
+                          maxLength={50}
+                          pattern="^[A-Za-z\s]{2,50}$"
+                          title="Name should only contain letters and spaces, between 2 and 50 characters."
                           value={formData.name}
                           onChange={handleInputChange}
                           className={`w-full bg-transparent border rounded-none py-3 px-4 font-sans text-sm text-charcoal placeholder:text-slate-grey/50 focus:outline-none transition-colors ${errors.name ? "border-red-500 focus:border-red-500" : "border-[#C5A880]/30 focus:border-champagne-gold"
@@ -214,6 +218,8 @@ export default function ContactPage() {
                           id="email"
                           type="email"
                           name="email"
+                          required
+                          maxLength={100} // 👈 Limits excessive character strings right at the input level
                           value={formData.email}
                           onChange={handleInputChange}
                           className={`w-full bg-transparent border rounded-none py-3 px-4 font-sans text-sm text-charcoal placeholder:text-slate-grey/50 focus:outline-none transition-colors ${errors.email ? "border-red-500 focus:border-red-500" : "border-[#C5A880]/30 focus:border-champagne-gold"
@@ -234,11 +240,15 @@ export default function ContactPage() {
                           id="phone"
                           type="tel"
                           name="phone"
+                          required
+                          maxLength={15}
+                          pattern="[0-9]{7,15}"
+                          title="Please enter a valid phone number containing only digits (7 to 15 digits)."
                           value={formData.phone}
                           onChange={handleInputChange}
                           className={`w-full bg-transparent border rounded-none py-3 px-4 font-sans text-sm text-charcoal placeholder:text-slate-grey/50 focus:outline-none transition-colors ${errors.phone ? "border-red-500 focus:border-red-500" : "border-[#C5A880]/30 focus:border-champagne-gold"
                             }`}
-                          placeholder="e.g. +971 50 123 4567"
+                          placeholder="e.g. 501234567"
                         />
                         {errors.phone && <span className="font-sans text-xs text-red-500 block">{errors.phone}</span>}
                       </div>
@@ -252,6 +262,7 @@ export default function ContactPage() {
                           id="companyName"
                           type="text"
                           name="companyName"
+                          maxLength={100}
                           value={formData.companyName}
                           onChange={handleInputChange}
                           className="w-full bg-transparent border border-[#C5A880]/30 rounded-none py-3 px-4 font-sans text-sm text-charcoal placeholder:text-slate-grey/50 focus:border-champagne-gold focus:outline-none transition-colors"
@@ -268,6 +279,7 @@ export default function ContactPage() {
                       <select
                         id="service"
                         name="service"
+                        required
                         value={formData.service}
                         onChange={handleInputChange}
                         className={`w-full bg-transparent border rounded-none py-3 px-4 font-sans text-sm text-charcoal focus:outline-none transition-colors appearance-none ${errors.service ? "border-red-500 focus:border-red-500" : "border-[#C5A880]/30 focus:border-champagne-gold"
@@ -296,6 +308,9 @@ export default function ContactPage() {
                         id="message"
                         name="message"
                         rows={4}
+                        required
+                        minLength={10}
+                        maxLength={1000}
                         value={formData.message}
                         onChange={handleInputChange}
                         className={`w-full bg-transparent border rounded-none py-3 px-4 font-sans text-sm text-charcoal placeholder:text-slate-grey/50 focus:outline-none transition-colors ${errors.message ? "border-red-500 focus:border-red-500" : "border-[#C5A880]/30 focus:border-champagne-gold"
@@ -310,7 +325,6 @@ export default function ContactPage() {
                         {submitError}
                       </div>
                     )}
-
                     {/* Submit Button */}
                     <button
                       type="submit"
