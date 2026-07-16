@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Phone, Mail, MapPin, Clock, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 
 export default function Footer() {
@@ -16,16 +17,24 @@ export default function Footer() {
           {/* Column 1: Brand details (occupies 4 cols) */}
           <div className="lg:col-span-4 space-y-6">
             <Link href="/" className="flex items-center gap-2.5 group select-none">
-              <div className="w-8 h-8 rounded-none border border-champagne-gold bg-transparent flex items-center justify-center">
-                <span className="font-serif text-sm font-bold text-champagne-gold">O</span>
+              <div className="hidden w-8 h-8 rounded-none border border-champagne-gold bg-transparent flex items-center justify-center">
+                <span className="font-serif text-sm font-bold text-champagne-gold ">O</span>
               </div>
               <div className="flex flex-col text-left">
-                <span className="font-serif text-lg font-bold tracking-tight text-charcoal leading-none">
+                <span className="hidden font-serif text-lg font-bold tracking-tight text-charcoal leading-none">
                   Open Business
                 </span>
-                <span className="font-sans text-[9px] tracking-[0.2em] text-champagne-gold font-semibold uppercase leading-none mt-1">
+                <span className="hidden font-sans text-[9px] tracking-[0.2em] text-champagne-gold font-semibold uppercase leading-none mt-1">
                   in UAE
                 </span>
+                <Image
+                  src="/images/Build%20Wise%20Desktop%20logo.png" // Change extension to .svg if needed
+                  alt="Open Business Logo"
+                  width={160}
+                  height={45}
+                  priority
+                  className="object-contain"
+                />
               </div>
             </Link>
 

@@ -48,7 +48,7 @@ export default function Header() {
               {/* Mobile Logo: Displayed on small screens, hidden on medium and up */}
               <div className="block md:hidden">
                 <Image
-                  src="/images/Build%20Wise%20Mobile%20logo.png" // Change extension to .svg if needed
+                  src="/images/Build%20Wise%20Desktop%20logo.png" // Change extension to .svg if needed
                   alt="Open Business Logo"
                   width={60}
                   height={60}

@@ -160,7 +160,7 @@ export default function FAQPage() {
               </div>
               <div className="space-y-1">
                 <span className="font-sans text-[9px] tracking-widest text-charcoal/40 font-bold uppercase block">Instant WhatsApp</span>
-                <a href="https://wa.me/971301234567" target="_blank" rel="noopener noreferrer" className="font-serif text-lg font-normal text-charcoal hover:text-champagne-gold transition-colors block leading-tight">
+                <a href="https://wa.me/1301234567" target="_blank" rel="noopener noreferrer" className="font-serif text-lg font-normal text-charcoal hover:text-champagne-gold transition-colors block leading-tight">
                   Start Chat Now
                 </a>
                 <span className="font-sans text-xs text-slate-grey block">Online 24/7 support</span>

@@ -404,7 +404,7 @@ export default function ContactPage() {
                   title="Official Email"
                   value="bwiseuae@gmail.com"
                   subtext="Average client response speed: 2 hours"
-                  href="mailto:sandipsawant0107@gmail.com"
+                  href="mailto:bwiseuae@gmail.com"
                   icon={Mail}
                   delay={0.15}
                 />
