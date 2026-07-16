@@ -50,8 +50,8 @@ export default function Header() {
                 <Image
                   src="/images/Build%20Wise%20Desktop%20logo.png" // Change extension to .svg if needed
                   alt="Open Business Logo"
-                  width={60}
-                  height={60}
+                  width={160}
+                  height={45}
                   priority
                   className="object-contain"
                 />

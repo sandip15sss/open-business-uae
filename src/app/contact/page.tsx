@@ -472,7 +472,7 @@ export default function ContactPage() {
                   Premises B.C. 1308392, Ajman Free Zone C1 Building
                 </h3>
                 <p className="font-sans text-sm text-slate-grey max-w-md">
-                  Coordinates: 25.1856° N, 55.2726° E. Centrally located right next to Business Bay Metro Station, Business Bay Canal, Dubai.
+                  Coordinates: 25.1913° N, 55.2726° E.
                 </p>
               </div>
               <div className="flex gap-4">
