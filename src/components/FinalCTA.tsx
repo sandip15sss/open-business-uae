@@ -10,10 +10,10 @@ export default function FinalCTA() {
   return (
     <section id="contact" className="py-16 md:py-24 bg-alabaster relative overflow-hidden border-t border-neutral-200/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
+
         {/* Main CTA Container Card */}
         <div className="bg-transparent border border-[#C5A880]/30 rounded-none overflow-hidden grid grid-cols-1 lg:grid-cols-12 items-stretch">
-          
+
           {/* Left Column: CTA Texts & Buttons */}
           <motion.div
             className="lg:col-span-7 p-6 sm:p-10 lg:p-16 flex flex-col justify-center space-y-6 md:space-y-8 text-left relative z-10 bg-alabaster"
@@ -46,9 +46,9 @@ export default function FinalCTA() {
                 Book Consultation
                 <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
               </Link>
-              
+
               <a
-                href="https://wa.me/971301234567"
+                href="https://wa.me/+971564410998"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="border border-emerald-600/30 text-emerald-700 bg-emerald-50/10 hover:bg-emerald-600 hover:text-white font-sans font-bold text-xs tracking-widest uppercase px-8 py-4 rounded-sm transition-all duration-300 flex items-center justify-center gap-2 group"
