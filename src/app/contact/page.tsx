@@ -430,9 +430,9 @@ export default function ContactPage() {
                 {/* WhatsApp */}
                 <ContactCard
                   title="Instant WhatsApp Hotline"
-                  value="+971 56 44 0998 "
+                  value="+971 56 441 0998"
                   subtext="Chat securely with client managers 24/7"
-                  href="https://wa.me/97156440998"
+                  href="https://wa.me/971564410998"
                   icon={WhatsAppIcon}
                   delay={0.3}
                   alignCenter={true}
