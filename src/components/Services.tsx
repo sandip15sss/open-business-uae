@@ -109,7 +109,7 @@ export default function Services() {
       <div className="absolute top-0 right-0 w-[30%] h-[30%] bg-[radial-gradient(circle_at_top_right,rgba(197,168,128,0.04),transparent_70%)] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
+
         {/* Section Heading */}
         <div className="flex items-center gap-6 mb-12 md:mb-24">
           <span className="font-sans text-[10px] font-bold tracking-[0.25em] text-champagne-gold uppercase whitespace-nowrap">
@@ -120,10 +120,10 @@ export default function Services() {
 
         {/* Services Layout Grid */}
         <div className="flex flex-col gap-8">
-          
+
           {/* Featured Card (Top Row) */}
           <motion.div
-            className="w-full bg-transparent border border-[#C5A880]/30 p-10 flex flex-col justify-between relative overflow-hidden min-h-[280px] group transition-all duration-[0.8s] ease-editorial hover:border-[#C5A880]/60"
+            className="w-full bg-transparent border border-[#C5A880]/30 p-10 flex flex-col justify-between relative overflow-hidden min-h-[200px] group transition-all duration-[0.8s] ease-editorial hover:border-[#C5A880]/60"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -188,9 +188,9 @@ export default function Services() {
               </motion.div>
             ))}
           </div>
-          
+
         </div>
-        
+
       </div>
     </section>
   );
