@@ -11,7 +11,7 @@ export default function Services() {
       title: "Company Formation",
       description: "Establish a prestigious mainland or freezone entity structured specifically for international commercial operations and full ownership protection.",
       link: "/services",
-      ctaText: "Explore Setup",
+      ctaText: "DETAIL ↗",
       icon: (className: string) => (
         <svg className={className} viewBox="0 0 100 100" fill="none">
           <path d="M15 80h70v2H15v-2z" fill="currentColor" />
@@ -127,9 +127,9 @@ export default function Services() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }} 
           >
-            <div className="flex flex-col md:flex-row md:items-center justify-between gap-8 h-full">
+            <div className="flex flex-col gap-6 h-full justify-between">
               <div className="flex flex-col sm:flex-row gap-6 sm:gap-8 items-start max-w-4xl text-left">
                 <div className="flex-shrink-0">
                   {featuredService.icon("w-16 h-16 text-champagne-gold")}
@@ -145,12 +145,9 @@ export default function Services() {
               </div>
 
               {/* Micro-interaction link */}
-              <div className="relative z-10 pt-4 md:pt-0 text-left md:text-right flex-shrink-0">
-                <Link href={featuredService.link} className="inline-flex items-center gap-1.5 font-sans text-xs tracking-widest font-bold uppercase text-charcoal group-hover:text-champagne-gold transition-colors duration-300">
-                  {featuredService.ctaText.replace(" ↗", "")}
-                  <span className="relative overflow-hidden block">
-                    <ArrowUpRight className="w-3.5 h-3.5 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
-                  </span>
+              <div className="relative z-10 pt-4 md:pt-0 text-left flex-shrink-0">
+                <Link href={featuredService.link} className="inline-flex items-center gap-1 font-sans text-xs tracking-widest font-bold uppercase text-charcoal group-hover:text-champagne-gold transition-colors duration-300">
+                  {featuredService.ctaText.replace(" ↗", "")} <ArrowUpRight className="w-3.5 h-3.5 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
                 </Link>
               </div>
             </div>
@@ -181,8 +178,8 @@ export default function Services() {
                   </div>
                 </div>
                 <div className="pt-6 text-left">
-                  <Link href={service.link} className="inline-flex items-center gap-1 font-sans text-[10px] tracking-widest font-bold uppercase text-charcoal group-hover:text-champagne-gold transition-colors duration-300">
-                    {service.ctaText.replace(" ↗", "")} <ArrowUpRight className="w-3 h-3" />
+                  <Link href={service.link} className="inline-flex items-center gap-1 font-sans text-xs tracking-widest font-bold uppercase text-charcoal group-hover:text-champagne-gold transition-colors duration-300">
+                    {service.ctaText.replace(" ↗", "")} <ArrowUpRight className="w-3.5 h-3.5 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
                   </Link>
                 </div>
               </motion.div>
