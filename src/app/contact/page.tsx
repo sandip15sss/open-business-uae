@@ -394,7 +394,7 @@ export default function ContactPage() {
                   title="Direct Telephone Desk"
                   value="+971 56 441 0998"
                   subtext="Available Mon-Fri, 9:00 AM - 6:00 PM, Saturday : 9:30 AM – 04:30 PM (GMT+4)"
-                  href="tel:+9715644109988"
+                  href="tel:+971564410998"
                   icon={Phone}
                   delay={0.1}
                 />

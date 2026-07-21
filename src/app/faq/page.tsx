@@ -2,12 +2,27 @@
 
 import React from "react";
 import Link from "next/link";
-import { MessageSquare, Mail, Phone, MessageCircle } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 
 import PageHero from "@/components/PageHero";
 import SectionHeader from "@/components/SectionHeader";
 import FAQAccordion from "@/components/FAQAccordion";
 import CTASection from "@/components/CTASection";
+
+const WhatsAppIcon = ({ className, strokeWidth = 1.2 }: { className?: string; strokeWidth?: number }) => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth={strokeWidth}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className={className}
+  >
+    <path d="M17.49 15.3a1.49 1.49 0 0 1-.22 1.09c-.29.43-.88.75-1.36.85-1.12.23-2.58-.2-4.14-1.2A13.8 13.8 0 0 1 8 12.7c-1.3-1.34-1.84-2.67-1.63-3.79a1.76 1.76 0 0 1 .72-1.27c.41-.33.91-.39 1.25-.13.3.23.86.95 1 1.24.23.4.15.79-.13 1.15-.22.28-.46.52-.69.8a10.27 10.27 0 0 0 2.2 2.2c.28-.23.52-.47.8-.69.36-.28.75-.36 1.15-.13.29.14 1 .7 1.24 1A1.66 1.66 0 0 1 17.49 15.3Z" />
+    <path d="M3 21l1.9-5.7A8.5 8.5 0 1 1 11.5 21c-1.6 0-3.13-.45-4.47-1.25L3 21Z" />
+  </svg>
+);
 
 const faqCategories = [
   "Company Formation",
@@ -132,8 +147,8 @@ export default function FAQPage() {
               </div>
               <div className="space-y-1">
                 <span className="font-sans text-[9px] tracking-widest text-charcoal/40 font-bold uppercase block">Phone Support</span>
-                <a href="tel:+971301234567" className="font-serif text-lg font-normal text-charcoal hover:text-champagne-gold transition-colors block leading-tight">
-                  +971 30 123 4567
+                <a href="tel:+971564410998" className="font-serif text-lg font-normal text-charcoal hover:text-champagne-gold transition-colors block leading-tight">
+                  +971 56 441 0998
                 </a>
                 <span className="font-sans text-xs text-slate-grey block">Mon - Fri, 9am - 6pm</span>
               </div>
@@ -146,8 +161,8 @@ export default function FAQPage() {
               </div>
               <div className="space-y-1">
                 <span className="font-sans text-[9px] tracking-widest text-charcoal/40 font-bold uppercase block">Email Inquiries</span>
-                <a href="mailto:hello@openbusiness.ae" className="font-serif text-lg font-normal text-charcoal hover:text-champagne-gold transition-colors block leading-tight">
-                  hello@openbusiness.ae
+                <a href="mailto:bwiseuae@gmail.com" className="font-serif text-lg font-normal text-charcoal hover:text-champagne-gold transition-colors block leading-tight">
+                  bwiseuae@gmail.com
                 </a>
                 <span className="font-sans text-xs text-slate-grey block">Replies within 2 hours</span>
               </div>
@@ -156,11 +171,11 @@ export default function FAQPage() {
             {/* WhatsApp Support */}
             <div className="bg-transparent p-6 rounded-none border border-[#C5A880]/20 flex items-start gap-4 hover:border-champagne-gold/40 transition-all duration-500">
               <div className="w-10 h-10 rounded-full border border-champagne-gold/20 flex items-center justify-center text-champagne-gold flex-shrink-0">
-                <MessageCircle className="w-4 h-4 text-green-600 fill-green-600/10" />
+                <WhatsAppIcon className="w-4 h-4" strokeWidth={1.2} />
               </div>
               <div className="space-y-1">
                 <span className="font-sans text-[9px] tracking-widest text-charcoal/40 font-bold uppercase block">Instant WhatsApp</span>
-                <a href="https://wa.me/1301234567" target="_blank" rel="noopener noreferrer" className="font-serif text-lg font-normal text-charcoal hover:text-champagne-gold transition-colors block leading-tight">
+                <a href="https://wa.me/971564410998" target="_blank" rel="noopener noreferrer" className="font-serif text-lg font-normal text-charcoal hover:text-champagne-gold transition-colors block leading-tight">
                   Start Chat Now
                 </a>
                 <span className="font-sans text-xs text-slate-grey block">Online 24/7 support</span>

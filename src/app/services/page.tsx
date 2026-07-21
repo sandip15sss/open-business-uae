@@ -13,6 +13,7 @@ import {
   Zap,
   Clock,
   CheckCircle,
+  FileCheck,
 } from "lucide-react";
 
 import PageHero from "@/components/PageHero";
@@ -96,6 +97,30 @@ const servicesList = [
       "Corporate compliance & legal protection strategies",
     ],
   },
+  {
+    title: "Power of Attorney & Notary",
+    description: "End-to-end support for drafting, notarizing through Dubai Courts, and securing MOFA attestations for individual and corporate legal authorizations.",
+    icon: FileCheck,
+    benefits: "Seamless legal authorization with complete compliance, confidentiality, and hassle-free document attestation.",
+    features: [
+      "General, Special, Property & Corporate POA drafting (English & Arabic)",
+      "Dubai Court notarization & legal translation assistance",
+      "MOFA (Ministry of Foreign Affairs) attestation guidance",
+      "End-to-end PRO document processing for individuals & companies",
+    ],
+  },
+  {
+    title: "AML Compliance & goAML",
+    description: "Complete goAML registration, policy drafting, and regulatory framework setup for Designated Non-Financial Businesses and Professions (DNFBPs).",
+    icon: ShieldCheck,
+    benefits: "Protect your business from heavy penalties with full FIU regulatory compliance and tailored risk assessments.",
+    features: [
+      "Mandatory goAML system registration with UAE Financial Intelligence Unit (FIU)",
+      "Customized AML/CFT policy, framework & procedure preparation",
+      "Compliance Officer documentation & internal risk assessment",
+      "Specialized support for Real Estate, Accounting, Precious Metals & Corporate Services",
+    ],
+  },
 ];
 
 const serviceStats = [
@@ -124,7 +149,7 @@ const serviceStats = [
 const benefitsList = [
   {
     title: "Vetted Professionals",
-    description: "Work directly with legal and corporate setup experts who interact with UAE ministries daily, bypassing intermediary agencies.",
+    description: "Work directly with legal and corporate setup experts, bypassing intermediary agencies.",
     icon: Award,
   },
   {
